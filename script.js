@@ -4,7 +4,7 @@ function makeFloatingNumber(floatingId){
     const getFloatingNumber = parseFloat(getFloatingNumberText);
     return getFloatingNumber;
 }
-    
+
 function productBtn(target){
     const listContainer = document.getElementById('list-container');
     const countList = listContainer.childElementCount;
@@ -14,11 +14,54 @@ function productBtn(target){
     const makePara = document.createElement("p");
     makePara.innerHTML = `${countList + 1}. ${clickEventItem}`;
     listContainer.appendChild(makePara);
-    // sum total price 
+    // show total price
     const totalPriceElement = document.getElementById("total-price");
     const totalPrice = makeFloatingNumber("total-price");
     const totalPriceNumber = totalPrice + clickEventAmount;
     const sumTotalNumber = totalPriceNumber.toFixed(2);
-    // console.log(totalPrice)
     totalPriceElement.innerText = sumTotalNumber;
+    // coupon code btn condition
+    if(totalPriceNumber >= 200){
+        const couponButton = document.getElementById("couponButton");
+        couponButton.removeAttribute("disabled");
+        couponButton.classList.add("bg-pinkBg");
+    }
+    if(totalPriceNumber > 0){
+        const purchaseButton = document.getElementById("makePurchaseBtn");
+        purchaseButton.removeAttribute("disabled");
+        purchaseButton.classList.add("bg-pinkBg");
+    }
 }
+
+function applyBtn(){
+    const promoCode = "SELL200";
+    const inputValue = document.getElementById("couponInput").value;
+    if(inputValue === promoCode){
+        const totalpriceGet = makeFloatingNumber("total-price");
+        // show discount price
+        const givenDiscount = (totalpriceGet / 100) * 20;
+        const discount = givenDiscount.toFixed(2);
+        document.getElementById("discount-price").innerHTML = discount;
+    }else{
+        alert("its not working")
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
