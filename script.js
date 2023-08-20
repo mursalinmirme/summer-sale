@@ -42,8 +42,14 @@ function applyBtn(){
         const givenDiscount = (totalpriceGet / 100) * 20;
         const discount = givenDiscount.toFixed(2);
         document.getElementById("discount-price").innerHTML = discount;
+        // show total balance 
+        const newTotalBalance = totalpriceGet - discount;
+        const newTotal = newTotalBalance.toFixed(2);
+        document.getElementById("totalBalance").innerHTML = newTotal;
+
     }else{
-        alert("its not working")
+        alert("its not working");
+        return;
     }
 }
 
