@@ -28,17 +28,17 @@
         }
       </script>
 </head>
-<body class="font-workFont bg-gray-500">
+<body class="font-workFont bg-bodyBg">
     <main>
         <section class="bg-[#F9F6E2]">
             <!-- banner container -->
-            <div class="w-5/6 mx-auto flex flex-col-reverse lg:flex-row gap-10 items-center py-10">
+            <div class="w-5/6 mx-auto flex flex-col-reverse md:flex-col lg:flex-row gap-10 items-center py-10">
                 <!-- banner section content-->
                 <div class="flex-1">
-                    <h3 class="text-3xl font-medium text-center">---SALE FEVER---</h3>
+                    <h3 class="text-xl lg:text-3xl font-medium text-center">---SALE FEVER---</h3>
                     <h2 class="text-5xl font-bold text-center mt-5 leading-tight">Purchase TK 200 or above & get <span class="text-pinkColor">20% off</span></h2>
                     <div class="flex justify-center mt-8 items-center gap-4">
-                        <p class="text-xl font-medium">Use Promo Code</p>
+                        <p class="text-lg lg:text-xl font-medium">Use Promo Code</p>
                         <button class="font-semibold bg-pinkBg text-white px-6 py-2 rounded-md">SELL200</button>
                     </div>
                 </div>
@@ -46,23 +46,23 @@
                 <div class="flex-1">
                     <!-- image -->
                     <div>
-                        <img class="lg:w-4/5" src="images/Summer 1.png" alt="">
+                        <img class="md:w-3/5 lg:w-4/5 mx-auto" src="images/Summer 1.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <section>
           <!-- products container -->
-          <div class="w-5/6 mx-auto pt-16 flex gap-8">
+          <div class="w-5/6 mx-auto pt-10 lg:pt-16 flex flex-col lg:flex-row gap-8">
             <!-- all products wrapper -->
-            <div>
+            <div class="flex-1">
             <!-- products first row -->
             <div>
-              <h3 class="text-3xl font-semibold mb-6">Kitchenware</h3>
+              <h3 class="text-2xl lg:text-3xl font-semibold mb-6 text-center lg:text-left">Kitchenware</h3>
               <!-- products grid container -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- single products 1-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -79,7 +79,7 @@
                   </div>
                 </div>
                 <!-- single products 2-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -96,7 +96,7 @@
                   </div>
                 </div>
                 <!-- single products 3-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -115,12 +115,12 @@
               </div>
             </div>
             <!-- products secound row -->
-            <div class="mt-14">
-              <h3 class="text-3xl font-semibold mb-6">Sportswear</h3>
+            <div class="mt-12 lg:mt-14">
+              <h3 class="text-2xl lg:text-3xl font-semibold mb-6 text-center lg:text-left">Sportswear</h3>
               <!-- products grid container -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- single products 4-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -133,11 +133,11 @@
                       <input type="radio" name="rating-4" class="mask mask-star-2 bg-amber-400" />
                     </div>
                     <h2 class="text-xl font-semibold my-2">Sports Back Cap</h2>
-                    <p class="text-xl font-normal text-gray-400"><span>49.00</span> TK</p>
+                    <p class="text-xl font-normal text-gray-400"><span>49.66</span> TK</p>
                   </div>
                 </div>
                 <!-- single products 5-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -154,7 +154,7 @@
                   </div>
                 </div>
                 <!-- single products 6-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -173,12 +173,12 @@
               </div>
             </div>
             <!-- products third row -->
-            <div class="mt-14">
-              <h3 class="text-3xl font-semibold mb-6">Furniture</h3>
+            <div class="mt-12 lg:mt-14">
+              <h3 class="text-2xl lg:text-3xl font-semibold mb-6 text-center lg:text-left">Furniture</h3>
               <!-- products grid container -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- single products 7-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod7.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -195,7 +195,7 @@
                   </div>
                 </div>
                 <!-- single products 7-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -212,7 +212,7 @@
                   </div>
                 </div>
                 <!-- single products 9-->
-                <div class="card w-72 p-4 bg-white rounded-lg hover:cursor-pointer">
+                <div onclick="productBtn(this)" class="card p-4 bg-white rounded-lg hover:cursor-pointer">
                   <figure class="py-8 bg-gray-100 rounded-md">
                     <img class="h-32" src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
                   </figure>
@@ -232,13 +232,13 @@
             </div>
           </div>
             <!-- accountance -->
-            <div class="w-[342px] h-96 mt-16">
+            <div class="w-full lg:w-[342px] h-96 mt-8 lg:mt-16">
               <!-- coupon box -->
               <div class="bg-white p-5 rounded-lg">
                 <h3 class="text-xl font-medium">Have coupon?</h3>
                 <div class="mt-4 relative">
                   <input class="w-full border py-3 pl-3 text-lg rounded-lg outline-none" type="text" id="couponInput" placeholder="Coupon code">
-                  <button class="absolute right-0 h-full w-20 bg-pinkBg text-white text-lg font-semibold rounded-e-lg">Apply</button>
+                  <button disabled onclick="applyBtn()" class="absolute right-0 h-full w-20 bg-pink-300 text-white text-lg font-semibold rounded-e-lg">Apply</button>
                 </div>
               </div>
               <!-- accounting wrapper -->
@@ -252,13 +252,13 @@
               <hr>
               <!-- accountance container -->
               <div class="mt-4 mb-4">
-                <h4 class="text-lg font-medium my-1">Total price: <span class="text-gray-500"><span>257.00</span>Tk</span></h4>
+                <h4 class="text-lg font-medium my-1">Total price: <span class="text-gray-500"><span id="total-price">0.00</span>Tk</span></h4>
                 <h4 class="text-lg font-medium my-1">Discount: <span class="text-gray-500"><span>51.40</span>Tk</span></h4>
                 <h4 class="text-lg font-medium my-1">Total: <span class="text-gray-500"><span>205.60</span>Tk</span></h4>
               </div>
               <hr>
               <div class="mt-5 pb-2 relative">
-                <button class="bg-pinkBg w-full text-white py-3 absolute rounded-lg font-semibold">Make Purchase</button>
+                <button disabled onclick="applyBtn()" class="bg-pink-200 w-full text-white py-3 absolute rounded-lg font-semibold">Make Purchase</button>
               </div>
             </div>
             </div>
