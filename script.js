@@ -48,11 +48,11 @@ function applyBtn(){
         document.getElementById("totalBalance").innerHTML = newTotal;
 
     }else{
-        alert("its not working");
+        alert("Invalid coupon code!");
         return;
     }
 }
-
+// function go home function
 
 
 

@@ -256,7 +256,23 @@
               </div>
               <hr>
               <div class="mt-5 pb-2 relative">
-                <button disabled onclick="applyBtn()" id="makePurchaseBtn" class="bg-pink-300 w-full text-white py-3 absolute text-lg font-semibold rounded-lg">Make Purchase</button>
+                <!-- <button disabled onclick="applyBtn()" id="makePurchaseBtn" class="bg-pink-300 w-full text-white py-3 absolute text-lg font-semibold rounded-lg">Make Purchase</button> -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button disabled id="makePurchaseBtn" class="bg-pink-300 w-full text-white py-3 absolute text-lg font-semibold rounded-lg" onclick="my_modal_5.showModal()">Make Purchase</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box py-20">
+                    <!-- modal content -->
+                    <div class="text-center">
+                      <img class="mx-auto" src="./images/congo.png" alt="">
+                      <h2 class="text-4xl font-bold mt-10">Congratulations</h2>
+                      <p class="text-base text-gray-400 mt-3">Your Purchase the product</p>
+                    </div>
+                    <div class="text-center pt-5">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button onclick="goToHome()" class="bg-pinkBg font-semibold text-lg text-white px-5 py-2 rounded-lg">Go Home</button>
+                    </div>
+                  </form>
+                </dialog>
               </div>
             </div>
             </div>
