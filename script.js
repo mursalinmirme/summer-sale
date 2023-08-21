@@ -1,3 +1,4 @@
+// utility
 function makeFloatingNumber(floatingId){
     const floatingElement = document.getElementById(floatingId);
     const getFloatingNumberText = floatingElement.innerText;
@@ -52,9 +53,25 @@ function applyBtn(){
         return;
     }
 }
+
 // function go home function
+function goToHome(){
+    document.getElementById("total-price").innerHTML = parseFloat(0).toFixed(2);
+    document.getElementById("discount-price").innerHTML = parseFloat(0).toFixed(2);
+    document.getElementById("totalBalance").innerHTML = parseFloat(0).toFixed(2);
+    // remove list childs
+    const listcontainer = document.getElementById('list-container');
+    listcontainer.innerHTML = '';
+    // console.log(listcontainer.remove())
+    // after back to home
+    document.getElementById("makePurchaseBtn").setAttribute("disabled", "true");
+    document.getElementById("makePurchaseBtn").classList.remove("bg-pinkBg");
+    document.getElementById("makePurchaseBtn").classList.add("bg-pink-300");
+    // remove coupon input field
+    const inputBox = document.getElementById("couponInput");
+    inputBox.value = '';
 
-
+}
 
 
 
